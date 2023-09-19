@@ -1,0 +1,673 @@
+[data-m-box]>div {
+	background: #fdfdfc;
+}
+
+.cmodal h3 {
+	margin-bottom: 8px;
+}
+
+.cmodal .total_price_section {
+	color: #4fba3d;
+	font-size: max(4rem, 3vw);
+	text-align: center;
+	font-weight: bold;
+}
+
+.total_price_modal {
+	color: #7b7979;
+	margin-top: 0;
+	font-size: 2rem;
+	text-align: center;
+	font-weight: bold;
+}
+
+.total_price_input_modal {
+	color: #7b7979;
+	margin-top: 0;
+	font-size: 2rem;
+	font-weight: bold;
+	border: solid 2px #e1e1e1;
+}
+
+.cmodal h4 {
+	margin-top: 0;
+	text-align: center;
+	color: #efa016;
+	font-weight: bold;
+	opacity: 0.7;
+}
+
+.cmodal .remaining_price_section {
+	font-size: 2rem;
+}
+
+.ul-none{
+        margin-top:-25px;
+}
+
+
+/*.bt{
+	border-top: dotted 1px #b3b1af;
+}*/
+
+.bb {
+	border-bottom: dotted 1px #b3b1af;
+	margin-bottom: 8px;
+}
+
+.pl {
+	padding: 14px 0;
+	padding-bottom: 48px;
+	padding-top: 4px;
+}
+
+.cmodal .total_change_section {
+	color: #fb9d00;
+	margin-top: 0;
+	font-size: 30px;
+	text-align: center;
+	font-weight: bold;
+	background: #FBE5C0;
+	border: 1px solid #FF9F05;
+	opacity: 1;
+}
+
+.total_change_modal {
+	color: #FF9F05;
+	margin-top: 0;
+	font-size: 2rem;
+	text-align: center;
+	font-weight: bold;
+	opacity: 1;
+}
+
+.total_change_section h4 {
+	opacity: 1;
+	color: red;
+}
+
+.text_buttons {
+	color: #4a4a4a;
+	margin-top: 0;
+	font-size: max(1rem, 18px);
+	font-weight: bold;
+}
+
+.text_add {
+	color: #fff;
+	font-size: 17px;
+	font-weight: bold;
+	margin-top: 15px;
+}
+
+.text_modal {
+	color: #4a4a4a;
+	margin-top: 0;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.text_modal_pr {
+	color: #4a4a4a;
+	margin-top: 0;
+	font-size: 17px;
+	font-weight: bold;
+	text-align: center;
+	height: 50px;
+}
+
+.text_modal_pend {
+	color: #4a4a4a;
+	margin-top: 0;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	height: 10px;
+}
+
+.text_modal_total {
+	color: #4a4a4a;
+	margin-top: 0;
+	font-size: 26px;
+	font-weight: bold;
+	text-align: center;
+	height: 20px;
+}
+
+.text_modal_vnp {
+	color: #4a4a4a;
+	margin-top: 0;
+	font-size: 26px;
+	font-weight: bold;
+	text-align: center;
+	height: 30px;
+}
+
+
+.text_modal_secondtext {
+	font-size: 16px;
+	padding-top: 0rem;
+}
+
+
+.vl {
+	border-left: 4px dotted #dbdbdb;
+	height: 150px;
+	margin-left: 7px;
+}
+
+.text_modal_ce {
+	text-align: left;
+}
+
+.text_modal_pago {
+	color: white;
+}
+
+
+.modal_header_font {
+	font-weight: bold;
+	color: #616161;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.cmodal h5,
+.pl li {
+	color: #4a4a4a;
+	margin-top: 0;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.pl i {
+	font-style: normal;
+}
+
+.pl li {
+	padding-left: 1.3em;
+	margin-bottom: 8px;
+        list-style: none;     
+}
+
+.pl li:last-of-type {
+	margin-bottom: 0;
+}
+
+.pl li em {
+	display: inline-block;
+	width: 1.0em;
+	height: 1.0em;
+	line-height: 0.8em;
+	margin-right: 12px;
+	text-align: center;
+	background: #007bff;
+	;
+	color: #fff;
+	border-radius: 50%;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+.pl li div {
+	float: right;
+	padding-left: 10px;
+}
+
+.qr_section {
+	padding: 30px 0;
+}
+
+
+.qr_imagen {
+	margin-top: 15px;
+}
+
+.qr_section img {
+	max-width: 200px;
+	margin: 0 auto;
+}
+
+.headers_numbers_1 {
+	flex: auto;
+}
+
+.headers_numbers_2 {
+	flex: 0 auto;
+	align-self: flex-end;
+}
+
+.nonfacesale {
+        flex: auto; 
+        margin-bottom: -14px;
+        
+}
+
+.applysistecredit {
+        flex: 0 auto; 
+        align-self: flex-end;
+        margin-bottom: 10px; 
+        margin-right:auto;  
+}
+
+.payment_values {
+	display: flex;
+	text-align: center;
+	flex-wrap: wrap;
+}
+
+.payment_buttons,
+.payment_add {
+	flex-direction: row;
+	justify-content: space-between;
+	text-align: center;
+}
+
+.email {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.emaillabel {
+	margin-top: 15px;
+	margin-right: 8px;
+}
+
+
+.emailinput {
+	margin-bottom: 5px;
+	margin-top: 5px;
+	font-size: 1.5rem;
+	min-width: 253px;
+}
+
+.payment_buttons button,
+.cbtn {
+	border-radius: 4px;
+	padding: 1px 1px;
+	margin-right: 7px;
+	margin-bottom: 7px;
+	background: #f5f5f5;
+	border: solid 2px #e1e1e1;
+	font-size: 18px;
+	cursor: pointer;
+	height: 107px;
+	width: 100px;
+}
+
+.cinpt {
+	border-radius: 4px;
+	padding: 1px 1px;
+	margin-right: 7px;
+	margin-bottom: 7px;
+	background: #f5f5f5;
+	border: solid 2px #e1e1e1;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.payment_buttons button.cbtn_active,
+.payment_buttons button:hover,
+.cbtn:hover {
+	background: #6494cd;
+	color: #fff;
+	border-color: #6494cd;
+}
+
+.submit_bttn .submit_bttn button,
+.payment_buttons button,
+.cbtn,
+.cinpt {
+	border: solid 2px #e1e1e1;
+	font-size: 18px;
+}
+
+.payment_buttons_icons {
+	border: solid 1px #d8dbe2;
+	font-size: 18px;
+	padding-bottom: 20px;
+}
+
+.submit_bttn {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 15px 0 20px 0;
+}
+
+.cancel_bttn {
+	padding: 6px 4px;
+	font-size: 18px;
+	width: 100%;
+}
+
+.submit_bttn input {
+	height: 45px;
+	margin-right: -1px;
+	/*background: transparent;*/
+}
+
+.submit_bttn_mail input {
+	width: 100%;
+	margin-right: -1px;
+	background: transparent;
+}
+
+.submit_bttn button {
+	width: 100%;
+	color: #fff;
+	border-color: #6494cd;
+}
+
+.submit_bttn input,
+.submit_bttn button {
+	padding: 0px 4px;
+}
+
+.images_button {
+	width: 50px;
+	height: 50px;
+}
+
+.ref_fields {
+	padding: 15px 0 10px 0;
+}
+
+.ref_fields button {
+	color: #acacac;
+}
+
+.ccomments {
+	width: 100%;
+	background: transparent;
+	margin: 15px 0;
+	height: 80px;
+	border: solid 1px #d8dbe2;
+	padding: 7px;
+	font-size: 17px;
+}
+
+.cinpt {
+	width: 30%;
+}
+
+.ref_fields .cinpt:last-of-type {
+	margin-right: 0;
+}
+
+button[type="disabled"] {
+	cursor: not-allowed;
+}
+
+@media(max-width: 575px) {
+	.cinpt {
+		width: calc(33.33% - 8px);
+	}
+	/*.headers_numbers_2{flex:initial;}*/
+}
+
+@media(max-width:1080px) {
+	.vl {
+		display: none;
+	}
+}
+
+
+/*//////////////////////////////////*/
+
+
+/* The Modal (background) */
+
+.modal {
+	display: none;
+	/* Hidden by default */
+	position: fixed;
+	/* Stay in place */
+	z-index: 1;
+	/* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%;
+	/* Full width */
+	height: 100%;
+	/* Full height */
+	/*overflow: auto; Enable scroll if needed */
+	background-color: rgb(0, 0, 0);
+	/* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4);
+	/* Black w/ opacity */
+}
+
+
+/* Modal Content/Box */
+
+.modal-content {
+	background-color: beige;
+	margin: 5% auto;
+	/* 15% from the top and centered */
+	padding: 20px;
+	border: 1px solid #888;
+	width: 105%;
+	/* Could be more or less, depending on screen size */
+	display: block;
+	height: auto;
+}
+
+
+/* The Close Button */
+
+.close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+	align-items: flex-end;
+}
+
+.close:hover,
+.close:focus {
+	color: #007bff;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
+/*//////////////////////////////////*/
+
+
+/*check*/
+
+
+/* The container */
+
+.containercheck {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 22px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	margin-bottom: 15px;
+}
+
+
+/* Hide the browser's default checkbox */
+
+.containercheck input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+
+/* Create a custom checkbox */
+
+.checkmark {
+	position: absolute;
+	top: 5px;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	background-color: #eee;
+}
+
+
+/* On mouse-over, add a grey background color */
+
+.containercheck:hover input~.checkmark {
+	background-color: #ccc;
+}
+
+
+/* When the checkbox is checked, add a blue background */
+
+.containercheck input:checked~.checkmark {
+	background-color: #2196F3;
+}
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+
+/* Show the checkmark when checked */
+
+.containercheck input:checked~.checkmark:after {
+	display: block;
+}
+
+
+/* Style the checkmark/indicator */
+
+.containercheck .checkmark:after {
+	left: 9px;
+	top: 5px;
+	width: 8px;
+	height: 14px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+
+/************** Model Starts***************************************/
+
+.log-box,
+[data-m-box]>div {
+	width: 80%;
+	min-width: 350px;
+	height: auto;
+	margin: auto;
+	background: #fff;
+	padding: 10px 15px 10px 15px;
+	border-radius: 5px;
+	position: relative;
+}
+
+.log-cls {
+	color: #00a2e8;
+	float: right;
+	font-size: 40px;
+	font-weight: bold;
+	position: absolute;
+	right: 9px;
+	top: 0px;
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	cursor: pointer;
+	user-select: none;
+	opacity: 0.9;
+}
+
+@-webkit-keyframes cSlideInDown {
+	from {
+		transform: translate3d(0, -50px, 0);
+		-webkit-transform: translate3d(0, -50px, 0);
+	}
+	to {
+		transform: translate3d(0, 0, 0);
+		-webkit-transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes cSlideInDown {
+	from {
+		transform: translate3d(0, -50px, 0);
+	}
+	to {
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@-webkit-keyframes cSlideUp {
+	from {
+		transform: translate3d(0, 0, 0);
+		-webkit-transform: translate3d(0, 0, 0);
+	}
+	to {
+		transform: translate3d(0, -50px, 0);
+		-webkit-transform: translate3d(0, -50px, 0);
+	}
+}
+
+@keyframes cSlideUp {
+	from {
+		transform: translate3d(0, 0, 0);
+	}
+	to {
+		transform: translate3d(0, -50px, 0);
+	}
+}
+
+.cSlideInDown {
+	animation-name: cSlideInDown;
+	-webkit-animation-name: cSlideInDown;
+}
+
+.cSlideUp {
+	animation-name: cSlideUp;
+	-webkit-animation-name: cSlideUp;
+}
+
+.animate,
+[data-m-box]>div {
+	-webkit-animation-duration: 0.3s;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-fill-mode: both;
+	animation-duration: 0.3s;
+	animation-timing-function: ease;
+	animation-fill-mode: both;
+}
+
+.l-overlay,
+[data-m-box] {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	z-index: 9999;
+	overflow-y: auto;
+	padding: 10px 15px;
+	display: none;
+}
+
+
+/************** Model Ends ***************************************/

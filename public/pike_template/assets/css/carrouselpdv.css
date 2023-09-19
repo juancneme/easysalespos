@@ -1,0 +1,92 @@
+.gallery-title
+{
+    font-size: 36px;
+    color: #42B32F;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+.gallery-title:after {
+    content: "";
+    position: absolute;
+    width: 7.5%;
+    left: 46.5%;
+    height: 45px;
+    border-bottom: 1px solid #5e5e5e;
+}
+.filter-button
+{
+    font-size: 12px;
+    /*border: 10px solid;*/
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+	background-size:100%;
+    background-position: center center;
+    transition: .3s ease-in-out;	
+}
+
+.filter-button:hover
+{
+   background-size:140%;
+   cursor:pointer;
+   
+}
+
+.btn-default:active .filter-button:active
+{
+    background-color: #42B32F;
+    color: white;
+}
+
+.port-image
+{
+    width: 100%;
+}
+
+.gallery_product
+{
+    margin-bottom: 10px;
+}
+
+/*owl carrusel*/
+.owl-carousel .item-video {
+height: 300px;
+}
+
+.counter {
+font-size: 3.5rem;
+}
+
+/*
+.owl-carousel .owl-item img
+{
+    color: rgb(77, 226, 58);
+    transition: all 0.3s ease;
+}
+
+
+.owl-carousel .owl-item img:hover
+{
+    border-color: blue ;
+}
+
+
+.owl-carousel .owl-item img:active
+{
+    border-color: red ;
+    background-color: black;
+}
+
+.owl-carousel .owl-item:focus
+{
+    border-color: yellow !important;
+    background-color: yellow;
+}
+*/
+
+
+
+
+
+

@@ -1,0 +1,135 @@
+/*.navbar-custom {
+    padding-top: 10px;
+}*/
+
+.panel-body.form-add {
+    display: none;
+}
+.col-form-label {
+   /* text-align: right;*/
+	font-weight: 700;
+}
+
+.form-horizontal {
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #bbb;
+    padding-top: 0px;
+    padding-bottom: 15px;
+}
+.panel.panel-default {
+    background-color: #fff;
+    padding-bottom: 10px;
+}
+.panel-heading {
+    margin: 15px;
+    padding-top: 20px;
+    font-size: 150%;
+    font-weight: bold;
+}
+.hide {
+    display: none;
+}
+body.adminbody .main-sidebar.left {
+    /*margin-top: 10px;*/
+}
+.content-page .content {
+    /*margin-top: 60px;*/
+}
+
+.headerbar .headerbar-left .logo img {
+  
+    width: auto;
+    height: auto;
+    margin-top: -11px;
+    max-height: 40px;
+    margin-left: 42px;
+    max-width: 82px;
+	
+}
+
+.headerbar .brand-small {
+	display: none;
+	
+}
+
+.logo {
+    color: #e3ebf3 !important;
+    font-size: 30px;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 48px;
+    border-left-width: 10px;
+}
+
+.logomdi {
+    max-width:100px
+}
+
+.table {
+    width: 100% !important;
+}
+
+.table td .table th {
+	padding:0rem  !important;
+}
+
+
+
+.forced .imghead2 {
+  display: block;  
+}
+.forced .imghead1 {
+  display: none;  
+}
+
+.enlarged .imghead1{
+    display: block;
+}
+
+.enlarged .logo {
+    background-repeat: no-repeat;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+.langlink {
+    border: 1px solid #dddddd;
+}
+.langlink img {
+    width: 50px;
+}
+
+.subir{
+    background: #00a2e8;
+    color:#fff;
+    border:0px solid #fff;
+	border-radius: 5px; 
+	width: 170px;
+	height: 30px;
+	cursor: pointer;
+}
+ 
+.subir:hover{
+    color:#fff;
+    background: #0283D6;
+	border-radius: 5px; 
+}
+
+/* input & button */
+.input-bar {
+    display: table;
+    width: 100%;
+}
+
+.input-bar-item {
+    display: table-cell;
+}
+
+.input-bar-item > button {
+    margin-left: 5px;
+}
+    
+.width100 {
+  width: 70%;
+}

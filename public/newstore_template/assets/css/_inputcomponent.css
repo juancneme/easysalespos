@@ -1,0 +1,75 @@
+.js .inputfilebtn {
+    width: 0.1px !important;
+    height: 0.1px !important;
+    opacity: 0 !important;
+    overflow: hidden !important;
+    position: absolute !important;
+    z-index: -1 !important;
+}
+
+.inputfilebtn + label {
+    max-width: 80%;
+    font-size: 1.25rem;
+    /* 20px */
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+    /* 10px 20px */
+}
+
+.no-js .inputfilebtn + label {
+    display: none;
+}
+
+.inputfilebtn:focus + label,
+.inputfilebtn.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.inputfilebtn + label * {
+    /* pointer-events: none; */
+    /* in case of FastClick lib use */
+}
+
+.inputfilebtn + label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    /* 4px */
+    margin-right: 0.25em;
+    /* 4px */
+}
+
+
+
+/* style 1 */
+
+.inputfilebtn-1 + label {
+    color: #d3394c;
+    border: 2px solid currentColor;
+}
+
+.inputfilebtn-1:focus + label,
+.inputfilebtn-1.has-focus + label,
+.inputfilebtn-1 + label:hover {
+    color: #722040;
+}
+
+
+
+
+
+
+
+
+
+
+
+

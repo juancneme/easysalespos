@@ -1,0 +1,70 @@
+@font-face {
+    font-family: Exo-Regular;
+    src: url( 'C:/xampp/htdocs/ccit/public/fonts/Exo-Regular.otf');
+}
+
+h3, h4, h5, H6  {
+    font-family: 'Exo-Regular';
+}
+.table td {
+    padding: 0rem;
+    font-family: 'Exo-Regular';
+    font-size: 1.2rem;
+    height: 20px;
+}
+.table thead td {
+    padding: 0rem;
+    font-family: 'Exo-Regular';
+    font-size: 0.8rem;
+    height: 20px;
+    padding-top: 5px;
+}
+.table tbody td {
+    padding: 0rem;
+    font-family: 'Exo-Regular';
+    font-size: 0.7rem;
+    height: 20px;
+    padding-bottom: 2px;
+}
+.table_datos tbody td {
+    padding: 0rem;
+    font-family: 'Exo-Regular';
+    font-size: 0.8rem;
+    height: 20px;
+}
+
+#imagen {
+    margin: 0px auto;
+}
+
+#logo {
+    float: left;
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.table-bordered td,
+.table-bordered th {
+    border: 1px solid #000000;
+    margin-top: 0%;
+}
+
+#watermark {
+    position: fixed;
+
+        /** 
+    Set a position in the page for your image
+    This should center it vertically
+**/
+    bottom: 4cm;
+    left: 3.5cm;
+    right: 5.5cm;
+
+    /** Change image dimensions**/
+    width: 16cm;
+    height: 18cm;
+
+    /** Your watermark should be behind every content**/
+    z-index: -1000;
+}

@@ -1,0 +1,149 @@
+/* TODO: optimize */
+
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+/**
+.receipt {
+    padding: 3mm;
+    width: 80mm;
+    border: 1px solid black;
+}
+**/
+
+
+.textleft {
+  width: 100%;
+  text-align: left;
+  padding-bottom: 1mm;
+  font-size: 9pt;
+}
+
+.textright {
+  width: 100%;
+  text-align: left;
+  padding-bottom: 1mm;
+  font-size: 9pt;
+}
+
+.textcenter{
+  width: 100%;
+  text-align: center;
+  padding-bottom: 1mm;
+  font-size: 9pt;
+}
+
+.textleftBold {
+  width: 100%;
+  text-align: left;
+  padding-bottom: 1mm;
+  font-size: 9pt;
+  font-weight: bold;
+}
+
+.textrightBold {
+  width: 100%;
+  text-align: left;
+  padding-bottom: 1mm;
+  font-size: 9pt;
+  font-weight: bold;
+}
+
+.textrighttBoldGr {
+  width: 100%;
+  text-align: right;
+  padding-bottom: 1mm;
+  font-size: 11pt;
+  font-weight: bold;
+}
+
+.textcenterBold {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 1mm;
+  font-size: 9pt;
+  font-weight: bold;
+}
+
+.logo {
+  height: 60px;
+  width: 60px;
+ /*background:url(http://michaeltruong.ca/images/logo.png) no-repeat;*/
+  background-size: 60px 60px;
+  float:right;
+  margin-top: 0px;"
+}
+
+.lineaPoint {
+  border-bottom:2px dotted #000000;
+  text-decoration:none;
+}
+
+.orderNo:empty {
+  display: none;
+}
+
+#barcode {
+  display: block;
+  margin: 0px auto;
+}
+
+#barcode:empty {
+  display: none;
+}
+
+.watermark {
+   position: absolute;
+   left: 7mm;
+   top: 60mm;
+   width: 75mm;
+   opacity: 0.1;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+#qrcode {
+  align-self: center;
+  flex: 0 0 100px
+}
+
+.qrlogo {
+  position: absolute;
+  opacity: 1;
+  alt="Smiley face" height="42" width="42";
+  z-index: -1;
+}
+
+.footer {
+  overflow: hidden;
+  margin-top: 5mm;
+  border-radius: 7px;
+  width: 100%;
+  background: black;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.footer:empty {
+    display: none;
+}
+
+.printType {
+  padding: 1mm 0px;
+  width: 100%;
+  background: grey;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}

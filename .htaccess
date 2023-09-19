@@ -1,0 +1,19 @@
+#Order deny,allow
+#Deny from all
+#<Files /public/index.php>
+#    Order Allow,Deny
+#    Allow from all
+#</Files>
+#=======
+#Order deny,allow
+#Deny from all
+#Order deny,allow
+#Deny from all
+
+Options +FollowSymLinks
+RewriteEngine On
+
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule ^ index.php [L]
+RewriteRule ^(.*)$ public/$1 [L]

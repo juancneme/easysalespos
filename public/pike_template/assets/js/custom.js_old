@@ -1,0 +1,203 @@
+Number.prototype.formatMoney = function (places, symbol, thousand, decimal) {
+    places = !isNaN(places = Math.abs(places)) ? places : 2;
+    symbol = symbol !== undefined ? symbol : "$";
+    thousand = thousand || ",";
+    decimal = decimal || ".";
+    var number = this,
+            negative = number < 0 ? "-" : "",
+            i = parseInt(number = Math.abs(+number || 0).toFixed(places), 10) + "",
+            j = (j = i.length) > 3 ? j % 3 : 0;
+    return symbol + negative + (j ? i.substr(0, j) + thousand : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + thousand) + (places ? decimal + Math.abs(number - i).toFixed(places).slice(2) : "");
+};
+
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+(function($) {
+    $.message = function(message, type, removeLast){
+        var time; 
+        if(removeLast){
+            $(".alert-javascript-"+type+" ul").empty();
+        }
+        if(message != "") {
+            $(".alert-javascript-"+type).show();
+            $(".alert-javascript-"+type+" ul").append('<li>'+message+'</li>');
+            stopTime();
+            startTime();
+        }
+        
+        function startTime(){
+            if(time == undefined){
+                time = setTimeout(function(){
+                    console.log("start ", time);
+                    $(".alert-javascript-error, .alert-javascript-info, .alert-javascript-success").hide("slow");
+                    stopTime();
+                }, 10000);
+            }
+        }
+        
+        function stopTime(){
+            console.log("stop ", time);
+            clearTimeout(time);
+        }
+    };
+})(jQuery);
+
+String.prototype.replaceAll = function(search, replacement) {
+    var target = this;
+    return target.split(search).join(replacement);
+};
+
+function objectSize(obj) {
+    var size = 0, key;
+    for (key in obj) {
+        if (obj.hasOwnProperty(key)) size++;
+    }
+    return size;
+}
+
+jQuery.datetimepicker.setLocale('es');
+
+jQuery('a, button').tooltip();
+
+jQuery(document).ajaxStart(function () {
+    Pace.restart();
+});
+jQuery(document).ready(function ($) {
+    /*$("input.input-datepicker").datepicker({
+     format: "yyyy-mm-dd",
+     language: "en",
+     autoclose: true,
+     startDate: '2000-01-01',
+     todayBtn: "linked",
+     clearBtn: true,
+     daysOfWeekHighlighted: "0",
+     //calendarWeeks: true,
+     todayHighlight: true,
+     enabledHours: true
+     }).prop("readonly", "true");
+     
+     //$("input.input-datetimepicker").datepicker();
+     //$('#reservationtime').daterangepicker({ timePicker: true, timePickerIncrement: 30, format: 'MM/DD/YYYY h:mm A' })
+     $('input.input-datetimepicker').timepicker({
+     showInputs: true
+     });*/
+
+    $("input.input-datepicker").datetimepicker({
+        timepicker: false,
+        format: 'Y-m-d'
+    });
+    $("input.input-datetimepicker").datetimepicker({
+        format: 'Y-m-d h:i:s',
+        allowTimes: [
+            '06:00', '06:30', '07:00', '07:30', '08:00', '08:30', '09:00', '09:30',
+            '10:00', '10:30', '11:00', '11:30', '12:00', '12:30', '13:00', '13:30',
+            '14:00', '14:30', '15:00', '15:30', '16:00', '16:30', '17:00', '17:30',
+            '18:00', '18:30'
+        ]
+    });
+
+    $($("input.input-datepicker").parent()).removeClass().addClass('input-group').addClass('date');
+    $("input.input-datepicker").parent().prepend('<div class="input-group-addon"><i class="fa fa-calendar-alt"></i></div>');
+
+    $($("input.input-datetimepicker").parent()).removeClass().addClass('input-group').addClass('date');
+    $("input.input-datetimepicker").parent().prepend('<div class="input-group-addon"><i class="fa fa-calendar-alt"></i></div>');
+    
+    
+    $('input[type="number"]').parent().addClass('input-number');
+    //$('input[type="number"]').val($('input[type="number"]').val() == "" ? 0 : $('input[type="number"]').val());
+    
+    $('<div class="input-number-nav"><div class="input-number-button quantity-up"><i class="fa fa-plus-square"></i></div><div class="input-number-button quantity-down"><i class="fa fa-minus-square"></i></div></div>').insertAfter('.input-number input');
+    $('.input-number').each(function() {
+      var spinner = jQuery(this),
+        input = spinner.find('input[type="number"]'),
+        btnUp = spinner.find('.quantity-up'),
+        btnDown = spinner.find('.quantity-down'),
+        min = input.attr('min') !== undefined ? input.attr('min') : 0,
+        max = input.attr('max') !== undefined ? input.attr('max') : 100;
+
+      btnUp.click(function() {
+        var oldValue = parseFloat(input.val());
+        if (oldValue >= max) {
+          var newVal = oldValue;
+        } else {
+          var newVal = oldValue + 1;
+        }
+        spinner.find("input").val(newVal);
+        spinner.find("input").trigger("change");
+      });
+
+      btnDown.click(function() {
+        var oldValue = parseFloat(input.val());
+        if (oldValue <= min) {
+          var newVal = oldValue;
+        } else {
+          var newVal = oldValue - 1;
+        }
+        spinner.find("input").val(newVal);
+        spinner.find("input").trigger("change");
+      });
+
+    });
+
+    $('.perfectScrollbarContainer').perfectScrollbar();
+
+    // input files
+   //$btn = $('<button />').attr('type', 'button').addClass('btn').addClass('btn-primary').append('<i class="fa fa-upload" /> Examinar').on('click', function () {
+   //    console.log($($(this).closest('.input-file').find('input[type="file"]')[0]));
+   //   $($(this).closest('.input-file').find('input[type="file"]')[0]).trigger('click');
+   //});
+   //$('input[type="file"]').after($btn);
+    //$($('input[type="file"]').parent()).addClass('input-file');
+
+    $(".select2").select2({
+        placeholder: 'Seleccione',
+        language: 'es'
+    });
+
+    var $form_validate = $(".form-add > .form-horizontal").validate();
+
+//    $('input[type="checkbox"], input[type="radio"]').iCheck({
+//        checkboxClass: 'icheckbox_flat-blue',
+//        radioClass: 'iradio_flat-blue'
+//    });
+//    
+//    $('input[type="checkbox"], input[type="radio"]').on('ifChanged', function (event) { $(event.target).trigger('change'); });
+//    
+    $('.sliderbar').slider();
+    
+    var elems = Array.prototype.slice.call(document.querySelectorAll('.control-input-onoff'));
+
+    elems.forEach(function(html) {
+      var switchery = new Switchery(html, {
+            color             : '#64bd63', 
+            secondaryColor    : '#dfdfdf', 
+            jackColor         : '#fff', 
+            jackSecondaryColor: null, 
+            className         : 'switchery', 
+            disabled          : false, 
+            disabledOpacity   : 0.5, 
+            speed             : '0.1s', 
+            size              : 'default'
+        });
+    });
+    
+//    var elem = document.querySelector('.control-input-onoff');
+//    var init = new Switchery(elem, );
+});
+
+function validarYQuitarFormato(str) {
+    try {
+        datos = str.toString().replace('$', '');
+        datos = datos.replace(',', '.');
+        datos = datos.replace('.', '');
+        
+        return parseFloat(datos);
+    }
+    catch (e) {
+        return false;
+    }    
+}

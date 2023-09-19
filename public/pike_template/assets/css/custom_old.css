@@ -1,0 +1,67 @@
+/*.navbar-custom {
+    padding-top: 10px;
+}*/
+.panel-body.form-add {
+    display: none;
+}
+.col-form-label {
+    text-align: right;
+}
+.form-horizontal {
+    background-color: #fff;
+    border-radius: 24px;
+    border: 1px solid #bbb;
+    padding-top: 35px;
+    padding-bottom: 15px;
+}
+.panel.panel-default {
+    background-color: #fff;
+    padding-bottom: 10px;
+}
+.panel-heading {
+    margin: 15px;
+    padding-top: 20px;
+    font-size: 150%;
+    font-weight: bold;
+}
+.hide {
+    display: none;
+}
+body.adminbody .main-sidebar.left {
+    /*margin-top: 10px;*/
+}
+.content-page .content {
+    /*margin-top: 60px;*/
+}
+.headerbar .headerbar-left{
+    height: 50px;
+}
+.headerbar .headerbar-left .logo img {
+    max-width: 150px;
+    max-height: 45px;
+    width: 130px;
+    height: auto;
+    margin-top: -2px;
+    margin-left: 0px;
+}
+.logo {
+    color: #e3ebf3 !important;
+    font-size: 30px;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 48px;
+}
+.table {
+    width: 100% !important;
+}
+.enlarged .logo img {
+    display: none;
+}
+.enlarged .logo {
+    background-image: url('/support/pictures/config/logos/logo_small.png');
+    background-size: 50px 50px;
+    background-position: left top;
+    display: block;
+    background-repeat: no-repeat;
+}

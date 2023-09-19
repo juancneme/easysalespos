@@ -1,0 +1,7 @@
+.env
+storage/
+public/support
+vendor/
+
+resources/views/management/clientsqueries.blade.php
+app/Http/Controllers/Management/ClientsqueriesController.php

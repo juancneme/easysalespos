@@ -1,0 +1,166 @@
+*{  box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+h1 {
+  font-weight: 300;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  width: 100%;  
+  padding-top: 100px;
+  background-color: #012060;
+}
+
+  .logo {
+   /* width: 600px;
+    height: 250px;*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+
+header{
+  position: fixed;
+  width: 100%;
+  top:0;
+}
+.navbar{
+  background-color: rgb(1,32,96);
+  height:8em;
+  max-height:75px;
+}
+.navbar .img-thumbnail{
+  background-color: transparent;
+  border: none;
+}
+.navbar .logo{
+  padding-left: 30px;
+}
+.navbar-toggler-icon{
+  width: 1.25rem;
+}
+
+figure {
+    text-align: center;
+    position: relative;
+    bottom: 25px;
+}
+
+.imagen {
+    width:45vh;
+    margin:auto;
+}
+
+.dropdown-menu{
+  background-color: rgba(1,176,241,0.8);
+  padding-top: 0;
+  padding-bottom:0;
+}
+.dropdown-item{
+  border:1px solid rgb(147,225,225);
+  color: white;
+  font-size: 14px;
+  padding: 10px;
+}
+.dropdown-item:hover{
+  background-color: rgba(147,225,225,0.4);
+  color: white;
+}
+
+ .container .fas{
+  font-size: 25px;
+  color: #012060;
+}
+
+button#showRightPush {
+  border: none;  
+  padding: 6px;
+  outline: none;
+  position: fixed;
+  z-index: 1;
+  background: #1ce4ef;;
+}
+
+
+
+.content {
+  font-family: sans-serif;
+  line-height: 2;
+  color: white;
+  width: 25em;
+  max-width: 100%;
+  color: rgba(255, 0, 0, 0);
+}
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f5f5f5;
+}
+
+#Firstfooter{
+  background-color: rgb(1,176,241);
+  
+}
+#Firstfooter small{
+  color: black;
+}
+
+ #Firstfooter .fas{
+  font-size: 25px;
+  color: black;
+}
+
+#lastfooter .fas{
+ font-size: 16px;
+ color: rgb(1,32,96);
+}
+#lastfooter{
+  background-color: rgb(1,32,96);
+}
+#lastfooter small{
+  font-size: 11px;
+  padding: 0;
+  margin: 0;
+}
+
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+{
+  #middleSection .container {
+    padding: 20vw 38vw;
+  }
+
+  .navbar-toggler span{
+    width: 50px;
+    height: 50px;
+  }
+  #Firstfooter{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  #lastfooter{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  body {
+    padding-top: 15%px;
+  }
+}
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 568px)
+{
+  #Firstfooter small{
+    font-size: 11px;
+  }
+}
